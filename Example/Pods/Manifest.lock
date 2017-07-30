@@ -1,0 +1,52 @@
+PODS:
+  - Bolts (1.8.4):
+    - Bolts/AppLinks (= 1.8.4)
+    - Bolts/Tasks (= 1.8.4)
+  - Bolts/AppLinks (1.8.4):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.8.4)
+  - FBSDKCoreKit (4.22.0):
+    - Bolts (~> 1.7)
+  - FBSDKLoginKit (4.18.0):
+    - FBSDKCoreKit
+  - LoginLib (0.1.0):
+    - Bolts (= 1.8.4)
+    - FBSDKCoreKit (= 4.22.0)
+    - FBSDKLoginKit (= 4.18.0)
+    - Parse (= 1.14.2)
+    - ParseFacebookUtilsV4
+    - ParseTwitterUtils
+    - Validator (~> 2.1.1)
+  - Parse (1.14.2):
+    - Bolts/Tasks (~> 1.8)
+  - ParseFacebookUtilsV4 (1.11.1):
+    - Bolts/Tasks (>= 1.6)
+    - FBSDKCoreKit (~> 4.10)
+    - FBSDKLoginKit (~> 4.10)
+    - FBSDKTVOSKit (~> 4.10)
+    - Parse (~> 1.12)
+  - ParseTwitterUtils (1.11.0):
+    - Bolts/Tasks (~> 1.7)
+    - Parse (~> 1.13)
+  - Validator (2.1.1)
+
+DEPENDENCIES:
+  - LoginLib (from `../`)
+
+EXTERNAL SOURCES:
+  LoginLib:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
+  FBSDKCoreKit: c693bad19feb225469eeff14452ba364522ee48b
+  FBSDKLoginKit: 6773073e970b2b15fb12e451ce7f11da0532b880
+  LoginLib: af746df2d232c56313aeb62b76858fca5657705f
+  Parse: 4335d65f40cb3d43190d723144bbe1afb9c38230
+  ParseFacebookUtilsV4: 2f30c2b7021c8005d3042781da7ef87d06589421
+  ParseTwitterUtils: 0dde9689565e7012d83f892c64aed2ebe69f2ea9
+  Validator: b1793fbfd0046097551d0edd18e2c30792d69ef5
+
+PODFILE CHECKSUM: 74089b16370eccb0ae27159fe240160338892a07
+
+COCOAPODS: 1.2.1

@@ -1,0 +1,46 @@
+{
+  "name": "LoginLib",
+  "version": "0.1.0",
+  "summary": "LoginLib is a quick and easy way to add a Login/Signup UX to your app.",
+  "description": "LoginLib handles Signup & Login, via Facebook, Google, Twitter & Email using Parse. It takes care of the UI, the forms, validation, and Facebook SDK access, Google SDK access, Twitter SDK access.",
+  "homepage": "https://github.com/Himnshu/LoginLib",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Himanshu mahajan": "hmahajan@athenasoft.in"
+  },
+  "source": {
+    "git": "https://github.com/Himnshu/LoginLib.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "LoginLib/Classes/**/*",
+  "resources": "LoginLib/Assets/*.{xib,xcassets,png,jpg,otf,ttf}",
+  "dependencies": {
+    "Validator": [
+      "~> 2.1.1"
+    ],
+    "FBSDKCoreKit": [
+      "4.22.0"
+    ],
+    "FBSDKLoginKit": [
+      "4.18.0"
+    ],
+    "ParseFacebookUtilsV4": [
+
+    ],
+    "ParseTwitterUtils": [
+
+    ],
+    "Parse": [
+      "1.14.2"
+    ],
+    "Bolts": [
+      "1.8.4"
+    ]
+  }
+}

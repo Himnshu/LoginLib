@@ -8,11 +8,21 @@
 
 import UIKit
 
+import LoginLib
+
 class ViewController: UIViewController {
+    
+    lazy var loginCoordinator: LoginCoordinator = {
+        return LoginCoordinator(rootViewController: self)
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        loginCoordinator.start()
     }
 
     override func didReceiveMemoryWarning() {
