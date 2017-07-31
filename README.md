@@ -124,7 +124,6 @@ You can set any of these properties on the superclass to change the way LoginLib
 | errorTintColor |  The tint color for error texts. | 
 | loginButtonText |  The text for the login button.  | 
 | signupButtonText |  The text for the signup button.  | 
-| facebookButtonText |  The text for the facebook button.  | 
 | forgotPasswordButtonText |  The text for the forgot password button.  | 
 | recoverPasswordButtonText |  The text for the recover password button.  | 
 | namePlaceholder |  The placeholder that will be used in the name text field.  | 
@@ -147,7 +146,6 @@ errorTintColor = UIColor(red: 253.0/255.0, green: 227.0/255.0, blue: 167.0/255.0
 // Change placeholder & button texts, useful for different marketing style or language.
 loginButtonText = "Sign In"
 signupButtonText = "Create Account"
-facebookButtonText = "Login with Facebook"
 forgotPasswordButtonText = "Forgot password?"
 recoverPasswordButtonText = "Recover"
 namePlaceholder = "Name"
