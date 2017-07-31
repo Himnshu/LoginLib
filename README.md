@@ -27,6 +27,36 @@ pod 'LoginLib', :git => 'https://github.com/Himnshu/LoginLib.git', :tag => '0.1.
 Everything is handled through the **LoginCoordinator** class. You insantiate it and pass the root view controller which is the UIViewController from which the LoginLib process will be started (presented) on. This will usually be self.
 
 ```swift
+import ParseFacebookUtilsV4
+
+import ParseTwitterUtils
+
+import Parse
+
+class AppDelegate: UIResponder, UIApplicationDelegate {
+
+func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+// Override point for customization after application launch.
+
+Parse.setApplicationId("124fgoewtijoewiotrewjio3432kdsfgkd", clientKey: "442jkfkldskldgkldskgldshklgkdsggsd")
+
+PFFacebookUtils.initializeFacebook(applicationLaunchOptions: launchOptions)
+
+PFTwitterUtils.initialize(withConsumerKey: "djgfdlskgbdjsklgbjdsgbjds", consumerSecret:"djksgjdksgjkdsgjkdsjkgdsjkgsdjkgdjksgjkdsgjkdsgkj")
+
+return true
+}
+
+func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool
+{
+let handled = FBSDKApplicationDelegate.sharedInstance().application(application, open: url, sourceApplication: sourceApplication, annotation: annotation)
+// Add any custom logic here.
+return handled
+}
+
+
+
+
 import LoginLib
 
 class ViewController: UIViewController { 

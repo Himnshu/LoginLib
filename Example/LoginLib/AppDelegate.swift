@@ -8,6 +8,12 @@
 
 import UIKit
 
+import ParseFacebookUtilsV4
+
+import ParseTwitterUtils
+
+import Parse
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -16,7 +22,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        Parse.setApplicationId("124fgoewtijoewiotrewjio3432kdsfgkd", clientKey: "442jkfkldskldgkldskgldshklgkdsggsd")
+        
+        PFFacebookUtils.initializeFacebook(applicationLaunchOptions: launchOptions)
+        
+        PFTwitterUtils.initialize(withConsumerKey: "djgfdlskgbdjsklgbjdsgbjds", consumerSecret:"djksgjdksgjkdsgjkdsjkgdsjkgsdjkgdjksgjkdsgjkdsgkj")
+        
         return true
+    }
+    
+    func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool
+    {
+        let handled = FBSDKApplicationDelegate.sharedInstance().application(application, open: url, sourceApplication: sourceApplication, annotation: annotation)
+        // Add any custom logic here.
+        return handled
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
