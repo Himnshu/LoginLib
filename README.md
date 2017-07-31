@@ -218,7 +218,7 @@ super.finish()
 
 ## Author
 
-Himanshu Mahajan, hmahajan@athenasoft.in
+Himanshu Mahajan, Himanshumahajan68@gmail.com
 
 ## License
 
