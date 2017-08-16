@@ -5,6 +5,14 @@
 [![License](https://img.shields.io/cocoapods/l/LoginLib.svg?style=flat)](http://cocoapods.org/pods/LoginLib)
 [![Platform](https://img.shields.io/cocoapods/p/LoginLib.svg?style=flat)](http://cocoapods.org/pods/LoginLib)
 
+LoginLib
+
+LoginLib handles Signup & Login, via Facebook, Google, Twitter & Email. It takes care of the UI, the forms, validation, and Facebook SDK access, Google SDK access and Twitter SDK access. All you need to do is start LoginLib, and then make the necessary calls to your own backend API to login or signup.
+
+This is a simple example of how your login can look. Check out the example project to see how this was done.
+
+<img src="https://droidfox68.files.wordpress.com/2017/08/img_5881.png" width="210"><img src="https://droidfox68.files.wordpress.com/2017/08/img_5882.png" width="210"><img src="https://droidfox68.files.wordpress.com/2017/08/img_5886.png" width="210">
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
