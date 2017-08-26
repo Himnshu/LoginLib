@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignupViewController" customModule="LoginFramework" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignupViewController" customModule="LoginLib" customModuleProvider="target">
             <connections>
                 <outlet property="backgroundImageView" destination="ViE-3o-Ioh" id="Wk9-jH-OzU"/>
                 <outlet property="emailTextField" destination="XRx-9N-yQb" id="HRe-h9-7MH"/>
@@ -29,7 +29,7 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ViE-3o-Ioh" customClass="GradientImageView" customModule="LoginFramework" customModuleProvider="target">
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ViE-3o-Ioh" customClass="GradientImageView" customModule="LoginLib" customModuleProvider="target">
                     <rect key="frame" x="-20" y="-20" width="415" height="707"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <userDefinedRuntimeAttributes>
@@ -41,7 +41,7 @@
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="39F-P3-KSq">
                     <rect key="frame" x="30" y="150" width="315" height="367"/>
                     <subviews>
-                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XRx-9N-yQb" customClass="SkyFloatingLabelTextField" customModule="LoginFramework" customModuleProvider="target">
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XRx-9N-yQb" customClass="SkyFloatingLabelTextField" customModule="LoginLib" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="0.0" width="315" height="50"/>
                             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
@@ -51,8 +51,6 @@
                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                             <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="next"/>
                             <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="EMAIL"/>
-                                <userDefinedRuntimeAttribute type="string" keyPath="title" value="Email"/>
                                 <userDefinedRuntimeAttribute type="number" keyPath="selectedLineHeight">
                                     <real key="value" value="2"/>
                                 </userDefinedRuntimeAttribute>
@@ -93,7 +91,7 @@
                                 <outlet property="delegate" destination="-1" id="HMi-GO-q2x"/>
                             </connections>
                         </textField>
-                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gbE-TG-9bX" customClass="SkyFloatingLabelTextField" customModule="LoginFramework" customModuleProvider="target">
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gbE-TG-9bX" customClass="SkyFloatingLabelTextField" customModule="LoginLib" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="105.5" width="315" height="50"/>
                             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
@@ -103,8 +101,6 @@
                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                             <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
                             <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="FULL NAME"/>
-                                <userDefinedRuntimeAttribute type="string" keyPath="title" value="Name"/>
                                 <userDefinedRuntimeAttribute type="number" keyPath="selectedLineHeight">
                                     <real key="value" value="2"/>
                                 </userDefinedRuntimeAttribute>
@@ -145,7 +141,7 @@
                                 <outlet property="delegate" destination="-1" id="vJf-tn-WQo"/>
                             </connections>
                         </textField>
-                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8TC-HX-laI" customClass="SkyFloatingLabelTextField" customModule="LoginFramework" customModuleProvider="target">
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8TC-HX-laI" customClass="SkyFloatingLabelTextField" customModule="LoginLib" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="211.5" width="315" height="50"/>
                             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
@@ -155,8 +151,6 @@
                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                             <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" secureTextEntry="YES"/>
                             <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="PASSWORD"/>
-                                <userDefinedRuntimeAttribute type="string" keyPath="title" value="Password"/>
                                 <userDefinedRuntimeAttribute type="number" keyPath="selectedLineHeight">
                                     <real key="value" value="2"/>
                                 </userDefinedRuntimeAttribute>
@@ -197,7 +191,7 @@
                                 <outlet property="delegate" destination="-1" id="vwm-xK-qXO"/>
                             </connections>
                         </textField>
-                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="irT-Y1-JZM" customClass="SkyFloatingLabelTextField" customModule="LoginFramework" customModuleProvider="target">
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="irT-Y1-JZM" customClass="SkyFloatingLabelTextField" customModule="LoginLib" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="317" width="315" height="50"/>
                             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
@@ -207,8 +201,6 @@
                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                             <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" secureTextEntry="YES"/>
                             <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="REPEAT PASSWORD"/>
-                                <userDefinedRuntimeAttribute type="string" keyPath="title" value="Password"/>
                                 <userDefinedRuntimeAttribute type="number" keyPath="selectedLineHeight">
                                     <real key="value" value="2"/>
                                 </userDefinedRuntimeAttribute>
@@ -264,7 +256,7 @@
                         <action selector="didSelectBack:" destination="-1" eventType="touchUpInside" id="HVh-uo-L1A"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b6U-Bx-8gq" customClass="Buttn" customModule="LoginFramework" customModuleProvider="target">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b6U-Bx-8gq" customClass="Buttn" customModule="LoginLib" customModuleProvider="target">
                     <rect key="frame" x="40" y="567" width="295" height="50"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="Id6-xn-n9J"/>

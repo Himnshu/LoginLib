@@ -37,7 +37,7 @@ class LoginCoordinator: LoginLib.LoginCoordinator
         signupButtonText = "Create Account"
         forgotPasswordButtonText = "Forgot password?"
         recoverPasswordButtonText = "Recover"
-        namePlaceholder = "Name"
+        namePlaceholder = "Full Name"
         emailPlaceholder = "E-Mail"
         passwordPlaceholder = "Password!"
         repeatPasswordPlaceholder = "Confirm password!"

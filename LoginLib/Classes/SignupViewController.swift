@@ -162,7 +162,7 @@ class SignupViewController: UIViewController, KeyboardMovable, BackgroundMovable
             let user = PFUser()
             user.email = email
             user.password = password
-            user.email = email
+            user.username = email
             delegate?.didSelectSignup(self, user: user)
         }
     }
