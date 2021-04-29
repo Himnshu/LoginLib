@@ -51,11 +51,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 // Override point for customization after application launch.
 
-Parse.setApplicationId("124fgoewtijoewiotrewjio3432kdsfgkd", clientKey: "442jkfkldskldgkldskgldshklgkdsggsd")
+Parse.setApplicationId("<App ID>", clientKey: "<ClientKey>")
 
 PFFacebookUtils.initializeFacebook(applicationLaunchOptions: launchOptions)
 
-PFTwitterUtils.initialize(withConsumerKey: "djgfdlskgbdjsklgbjdsgbjds", consumerSecret:"djksgjdksgjkdsgjkdsjkgdsjkgsdjkgdjksgjkdsgjkdsgkj")
+PFTwitterUtils.initialize(withConsumerKey: "<ConsumerKey>", consumerSecret:"<ConsumerSecret>")
 
 return true
 }
